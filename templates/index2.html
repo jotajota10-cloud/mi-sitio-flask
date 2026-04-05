@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> minha pagina web</title>
+        <style>
+            body{
+                background-color: darkgreen;
+                text-align: center;
+                color: black;
+                font-family: fantasy;
+                font-size: 30px;
+                    text-shadow: 2px 2px 5px rgba(0,0,0.1);
+                    margin-top: 50px;
+   
+            }
+            h1 {
+                color: darkblue;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 50px;
+                font-style: italic;
+                text-shadow: 2px 2px 5px rgba(0,0,0.3);
+                margin-top: 50px;
+           
+            }
+       </style>
+            <body>
+                <h1>
+                    ola mundo
+                </h1>
+                <p>
+                    escreve teu nome aqui 
+                </p>
+                <input type="text" id=" nome de usuario" placeholder=" teu nome...">
+            <br></br>
+                <button onclick="saludarpersonalizado()">saludame</button>
+                <div id="mensaje"></div>
+        <script>
+            function saludar() {
+                alert("BEM-VINDO A MINHA PAGINA WEB.");}
+          const boton = document.querySelector('button');
+          const input = document.querySelector('input');
+          boton.addEventListener('click', () => {
+            const nombre = input.value;
+            if (nombre) {
+                alert(`¡Ola, ${nombre}! bemvindo a minha pagina.`);
+                } else {
+                  alert("Por favor, escribe tu nombre primero.");  
+            }
+            });
+        </script>
+    
+
+    </head>
